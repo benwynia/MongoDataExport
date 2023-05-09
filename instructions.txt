@@ -1,0 +1,64 @@
+This should work with your default python environment, assuming you already have a recent version of pandas and pymongo installed. 
+
+These are the preferred versions:
+pandas==1.5.2
+pymongo==3.12.0
+
+You can confirm this in windows by opening a command prompt and typing:
+
+pip3 list
+
+Execution Steps:
+1. Open a cmd window
+2. Change directory to the directory where this script is stored
+3. Run command "python get_nwc_data_by_timestamp.py"
+
+
+If your default python environment is not set up, you can follow the steps below to run the script. 
+
+
+To call this script from the command prompt and create a virtual environment for your dependencies, follow these steps:
+
+1. Open the command prompt and navigate to the directory where your Python script and requirements.txt are located.
+
+2. Create a virtual environment:
+
+	For Windows:
+
+		python -m venv myenv
+
+	For macOS/Linux:
+
+		python3 -m venv myenv
+
+	This will create a virtual environment called myenv in your current directory.
+
+3. Activate the virtual environment:
+	
+	For Windows:
+
+		myenv\Scripts\activate
+
+	For macOS/Linux:
+
+		source myenv/bin/activate
+
+	Your command prompt should now show the virtual environment name, like (myenv).
+
+4. Install the dependencies using the requirements.txt file:
+
+	pip install -r requirements.txt
+
+5. Run your Python script:
+	
+	For Windows:
+
+		python get_nwc_data_by_timestamp.py
+
+	For macOS/Linux:
+
+		python3 get_nwc_data_by_timestamp.py
+
+	This will execute your script, and the script will ask for the necessary inputs.
+
+6. Remember to deactivate the virtual environment when you're done by simply typing deactivate in the command prompt.
